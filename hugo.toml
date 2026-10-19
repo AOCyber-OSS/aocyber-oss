@@ -5,48 +5,48 @@ enableRobotsTXT = true
 
 [params]
   description = "Open source repositories from AO Cyber Systems — the Eden platform, SDKs, UI kits, and developer tooling."
-  githubOrg = "ao-cyber-systems"
+  githubOrg = "aocyber-oss"
 
 [[params.projects]]
   name = "eden-platform-go"
   tagline = "Shared Go platform library."
   description = "The Go foundation of the Eden platform — shared services, APIs, and backend infrastructure."
-  repo = "https://github.com/ao-cyber-systems/eden-platform-go"
+  repo = "https://github.com/AOCyber-OSS/eden-platform-go"
   language = "Go"
 
 [[params.projects]]
   name = "eden-platform-flutter"
   tagline = "Shared Flutter platform library."
   description = "Cross-platform Flutter packages and client foundations for building on the Eden platform."
-  repo = "https://github.com/ao-cyber-systems/eden-platform-flutter"
+  repo = "https://github.com/AOCyber-OSS/eden-platform-flutter"
   language = "Dart / Flutter"
 
 [[params.projects]]
   name = "eden-platform-api-dart"
   tagline = "Generated Dart API clients."
   description = "Auto-generated Dart clients and protobuf models for Eden platform services."
-  repo = "https://github.com/ao-cyber-systems/eden-platform-api-dart"
+  repo = "https://github.com/AOCyber-OSS/eden-platform-api-dart"
   language = "Dart"
 
 [[params.projects]]
   name = "eden-cli"
   tagline = "Command-line interface for Eden."
   description = "Developer CLI for workspace orchestration, scaffolding, and consumer sync workflows."
-  repo = "https://github.com/ao-cyber-systems/eden-cli"
+  repo = "https://github.com/AOCyber-OSS/eden-cli"
   language = "Go"
 
 [[params.projects]]
   name = "eden-ui-flutter"
   tagline = "Eden design system for Flutter."
   description = "50+ widgets, 6 brand presets, and light/dark themes — the UI component library powering Eden's Flutter apps."
-  repo = "https://github.com/ao-cyber-systems/eden-ui-flutter"
+  repo = "https://github.com/AOCyber-OSS/eden-ui-flutter"
   language = "Dart / Flutter"
 
 [[params.projects]]
   name = "devflow-claude"
   tagline = "Autonomous dev agent for Claude Code."
   description = "A Claude Code plugin marketplace — the DevFlow autonomous agent and developer tooling."
-  repo = "https://github.com/ao-cyber-systems/devflow-claude"
+  repo = "https://github.com/AOCyber-OSS/aoforge-claude"
   language = "JavaScript"
 
 [markup]
