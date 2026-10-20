@@ -15,6 +15,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # The site (oss.aocyber.ai) is published from the public copy of this
+  # repository (the OSS mirror). This internal source has no Pages site, so
+  # here the job only proves that the site builds: every Pages step and the
+  # deploy job run only where the repository is public.
   build:
     runs-on: ubuntu-latest
     env:
@@ -29,16 +33,19 @@ jobs:
           fetch-depth: 0
       - name: Setup Pages
         id: pages
+        if: github.event.repository.visibility == 'public'
         uses: actions/configure-pages@v5
       - name: Build
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url || 'https://oss.aocyber.ai' }}/"
       - name: Upload artifact
+        if: github.event.repository.visibility == 'public'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   deploy:
     needs: build
+    if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
